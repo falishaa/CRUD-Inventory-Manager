@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import API_URL from "../api";
+import { useEffect } from "react";
 
 function CreateItem() {
-  //only display edit button if user is logged in
-useEffect(() => {
-  const token = localStorage.getItem("token");
+  useEffect(() => { //redirects user to login if un-authenticated user somehow gets to this page
+    const token = localStorage.getItem("token");
 
-  if (!token) {
-    navigate("/login");
-  }
-}, []);
+    if (!token) {
+      navigate("/login");
+    }
+  }, []);
+
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -89,7 +89,5 @@ useEffect(() => {
     </div>
   );
 }
-
-
 
 export default CreateItem;
