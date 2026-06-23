@@ -17,19 +17,25 @@ App Features:
 * Public item browsing
 
 How to Run:
-1. Run backend with following commands:
+1. Run backend:
+
+Create a .env file based on .env.example
+
+Run the following commands:  
 ```
+cd backend
 npm install  
 npm run dev
 ```
 
 2. Open another terminal and run frontend with following commands:
 ```
+cd frontend
 npm install  
 npm run dev
 ```
 
-3. Navigate to the URL provided in console, it should look something like this:
+3. Navigate to the URL provided in console, it should look like this:
 ```
 http://localhost:5173/
 ```
