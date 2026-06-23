@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import API_URL from "../api";
 
 function Login() {
@@ -37,7 +36,7 @@ function Login() {
         response.data.username
       );
 
-      navigate("/dashboard");
+      window.location.href = "/dashboard";
 
     } catch (error) {
       alert(
