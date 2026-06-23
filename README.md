@@ -23,8 +23,13 @@ npm install
 npm run dev
 ```
 
-2. Run frontend with following commands:
+2. Open another terminal and run frontend with following commands:
 ```
 npm install  
 npm run dev
+```
+
+3. Navigate to the URL provided in console, it should look something like this:
+```
+http://localhost:5173/
 ```
